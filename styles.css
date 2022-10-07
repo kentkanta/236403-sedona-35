@@ -1,0 +1,211 @@
+/* Подключение внешних шрифтов */
+@font-face {
+  font-family: "PT Sans";
+  src: url(fonts/ptsans-400.woff2) format('woff2');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url(fonts/ptsans-700.woff2);
+  font-style: bold;
+  font-weight: 700;
+  font-display: swap;
+}
+
+/* Сброс отступов (внешних и внутренних) у всех элементов, установка box-sizing белого человека */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Стили для всей страницы */
+body {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  color: #000;
+  background-color: #fff;
+}
+
+/* Стили для повторяющихся элементов */
+
+.button {
+  display: block;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  border-radius: 4px;
+  text-align: center;
+  text-transform: uppercase;
+  border-width: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+
+
+/* Стили для main-header */
+
+.main-header a {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #000;
+
+}
+
+.main-header .button {
+  width: 160px;
+  background-color: #756157;
+  color: #fff;
+  padding: 8px 0;
+  font-size: 16px;
+}
+
+/* Стили для промо-блока */
+
+.promo {
+  background-image: url('img/bitmap/promo-background.jpg');
+  background-repeat: no-repeat;
+  min-height: 485px;
+}
+
+/* Стили для блока преимуществ */
+
+.advantages-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-style: bold;
+}
+
+.attractions .img-item {
+  background-color: #82B3D3;
+}
+
+.attractions .text-item {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.attractions .img-item h3 {
+  font-size: 24px;
+  line-height: 28px;
+  color: #fff;
+}
+
+.attractions .img-item p {
+  font-size: 18px;
+  line-height: 21px;
+  color: #fff;
+}
+
+.attractions .text-item h3 {
+  font-size: 24px;
+  line-height: 28px;
+  color: #000;
+}
+
+.attractions .text-item p {
+  font-size: 18px;
+  line-height: 21px;
+  color: #000;
+}
+
+.benefits .advantages-item {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.benefits h3 {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.benefits p {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+/* Стили для секции с открытием модального окна (section.search) */
+
+.search h3 {
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.search p {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.search .button {
+  background-color: #756157;
+  width: 376px;
+  padding: 8px 0;
+  color: #fff;
+}
+
+.subscription {
+  background-image: url('img/bitmap/subscription-background.jpg');
+  background-repeat: no-repeat;
+  min-height: 415px;
+  color: #fff;
+}
+
+.subscription .subscription-title-text {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+  color: #fff;
+}
+
+.subscription .subscription-text {
+  font-size: 22px;
+  line-height: 26px;
+  color: #fff;
+}
+
+.subscription input[type="email"] {
+  width: 452px;
+  padding: 12px 0;
+  font-size: 18px;
+  line-height: 24px;
+
+}
+
+.subscription .button {
+  width: 232px;
+  padding: 8px 0;
+  background-color: #82B3D3;
+  color: #fff;
+}
+
+
+/* Стили для  подвала (main-footer)*/
+
+.main-footer .number {
+  font-weight: 400px;
+  font-size: 40px;
+  color: #000;
+}
