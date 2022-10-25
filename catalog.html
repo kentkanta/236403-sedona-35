@@ -80,33 +80,49 @@
               <fieldset class="hotel-filter-group hotel-filter__hotel-filter-group infrastructure-filter-group">
                 <legend class="hotel-filter-title hotel-filter__hotel-filter-title">Инфраструктура:</legend>
                 <div class="infrastructure-filter hotel-filter__infrastructure-filter">
-                  <input type="checkbox" name="infrastructure" value="swimming-pool" id="swimming-pool" checked />
-                  <label class="infrastructure-name hotel-filter__infrastracture-name"
-                    for="swimming-pool">Бассейн</label>
+                  <label class="infrastructure-name hotel-filter__infrastracture-name">
+                    <input class="control-input visually-hidden" type="checkbox" name="infrastructure" value="swimming-pool" id="swimming-pool" checked />
+                    <span class="control-mark infrastructure-filter-group__control-mark"></span>
+                    <span>Бассейн</span>
+                  </label>
                 </div>
                 <div class="infrastructure-filter hotel-filter__infrastructure-filter">
-                  <input type="checkbox" name="infrastructure" value="parking" id="parking" checked />
-                  <label class="infrastructure-name hotel-filter__infrastracture-name" for="parking">Парковка</label>
+                  <label class="infrastructure-name hotel-filter__infrastracture-name">
+                    <input class="control-input visually-hidden" type="checkbox" name="infrastructure" value="parking" id="parking" checked />
+                    <span class="control-mark infrastructure-filter-group__control-mark"></span>
+                    <span>Парковка</span>
+                  </label>
                 </div>
                 <div class="infrastructure-filter hotel-filter__infrastructure-filter">
-                  <input type="checkbox" name="infrastructure" value="wi-fi" id="wi-fi" />
-                  <label class="infrastructure-name hotel-filter__infrastracture-name" for="wi-fi">Wi-Fi</label>
+                  <label class="infrastructure-name hotel-filter__infrastracture-name">
+                    <input class="control-input visually-hidden" type="checkbox" name="infrastructure" value="wi-fi" id="wi-fi" />
+                    <span class="control-mark infrastructure-filter-group__control-mark"></span>
+                    <span>Wi-Fi</span>
+                  </label>
                 </div>
               </fieldset>
               <fieldset class="hotel-filter-group hotel-filter__hotel-filter-group type-of-housing-filter-group">
                 <legend class="hotel-filter-title hotel-filter__hotel-filter-title">Тип жилья:</legend>
                 <div class="type-of-housing-filter hotel-filter__type-of-housing-filter">
-                  <input type="radio" name="type-of-housing" value="hotel" id="hotel" checked />
-                  <label class="type-of-housing-name hotel-filter__type-of-housing-name" for="hotel">Гостиница</label>
+                  <label class="type-of-housing-name hotel-filter__type-of-housing-name">
+                    <input class="control-input visually-hidden" type="radio" name="type-of-housing" value="hotel" id="hotel" checked />
+                    <span class="control-mark type-of-housing-filter-group__control-mark"></span>
+                    <span>Гостиница</span>
+                  </label>
                 </div>
                 <div class="type-of-housing-filter hotel-filter__type-of-housing-filter">
-                  <input type="radio" name="type-of-housing" value="motel" id="motel" />
-                  <label class="type-of-housing-name hotel-filter__type-of-housing-name" for="motel">Мотель</label>
+                  <label class="type-of-housing-name hotel-filter__type-of-housing-name">
+                    <input class="control-input visually-hidden" type="radio" name="type-of-housing" value="motel" id="motel" />
+                    <span class="control-mark type-of-housing-filter-group__control-mark"></span>
+                    <span>Мотель</span>
+                  </label>
                 </div>
                 <div class="type-of-housing-filter hotel-filter__type-of-housing-filter">
-                  <input type="radio" name="type-of-housing" value="apartments" id="apartments" />
-                  <label class="type-of-housing-name hotel-filter__type-of-housing-name"
-                    for="apartments">Апартаменты</label>
+                  <label class="type-of-housing-name hotel-filter__type-of-housing-name">
+                    <input class="control-input visually-hidden" type="radio" name="type-of-housing" value="apartments" id="apartments" />
+                    <span class="control-mark type-of-housing-filter-group__control-mark"></span>
+                    <span>Апартаменты</span>
+                  </label>
                 </div>
               </fieldset>
               <fieldset class="hotel-filter-group hotel-filter__hotel-filter-group price-filter-group">
@@ -277,7 +293,7 @@
           </div>
           <footer class="catalog-footer catalog__catalog-footer">
             <div class="paginator catalog__paginator">
-              <a href="#" class="paginator-item paginator__paginator-item disabled">1</a>
+              <a class="paginator-item paginator__paginator-item disabled">1</a>
               <a href="#" class="paginator-item paginator__paginator-item">2</a>
               <a href="#" class="paginator-item paginator__paginator-item">3</a>
               <a href="#" class="paginator-item paginator__paginator-item">4</a>
