@@ -64,6 +64,17 @@ body {
   cursor: pointer;
 }
 
+.button:disabled {
+  background-color: #E5E5E5;
+  color: #fff;
+}
+
+.button:disabled:hover {
+  background-color: #E5E5E5;
+  color: #fff;
+  cursor: default;
+}
+
 .button:focus {
   outline: none;
   border: none;
@@ -219,8 +230,6 @@ body {
 
 /* Стили для блока преимуществ */
 
-/* !!! Скорректировать width на flex-basis!!! */
-
 .advantages-title {
   font-size: 30px;
   line-height: 36px;
@@ -345,6 +354,7 @@ body {
 
 .benefits-list {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .benefits-list-item {
@@ -554,6 +564,13 @@ body {
   cursor: pointer;
 }
 
+.infrastructure-name:hover {
+  opacity: 0.3;
+}
+.infrastructure-name:active {
+  opacity: 0.2;
+}
+
 .type-of-housing-name {
   display: block;
   position: relative;
@@ -562,6 +579,14 @@ body {
   line-height: 23px;
   color: #fff;
   cursor: pointer;
+}
+
+.type-of-housing-name:hover {
+  opacity: 0.3;
+}
+
+.type-of-housing-name:active {
+  opacity: 0.2;
 }
 
 .infrastructure-filter-group__control-mark {
@@ -629,14 +654,27 @@ body {
 
 .range-input {
   margin: 0;
-  padding: 12px 20px;
-  border: none;
+  padding: 9px 17px;
   outline: none;
   width: 143px;
   font: inherit;
   font-size: 18px;
   font-weight: 700;
   background-color: #F2F2F2;
+  border: 3px solid transparent;
+}
+
+.range-input:hover {
+  background-color: #E6E6E6;
+}
+
+.range-input:focus {
+  border-color: #83B3D3;
+}
+
+.range-input:active {
+  border-width: 2px;
+  border-color: #000;
 }
 
 .input-from {
@@ -653,7 +691,7 @@ body {
   position: absolute;
   font-size: 18px;
   line-height: 24px;
-  color:rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .range-label:hover {
@@ -769,7 +807,6 @@ body {
 
 /* Стили для каталога */
 .catalog {
-  padding-top: 60px;
   padding-top: 50px;
   margin-bottom: 60px;
 }
@@ -797,7 +834,6 @@ body {
 .catalog-sorting {
   width: 290px;
   margin: 0;
-  padding: 0;
   padding: 14px 20px 14px 20px;
   font-size: 18px;
   line-height: 21px;
@@ -807,8 +843,6 @@ body {
   appearance: none;
   text-align: justify;
   font-family: "PT Sans", sans-serif;
-  font-size: 18px;
-  line-height: 21px;
   font-weight: 400;
   background-image: url("../img/vector/catalog-header-select-arrow.svg");
   background-repeat: no-repeat;
@@ -853,6 +887,14 @@ body {
   background-position: center center;
   background-color: transparent;
   cursor: pointer;
+}
+
+.type-of-view-list__button:focus {
+  border: 3px solid #83B3D3;
+}
+
+.type-of-view-list__button:active {
+  border: 2px solid #83B3D3;
 }
 
 .type-of-view-list-item:hover .type-of-view-list__button {
@@ -961,7 +1003,7 @@ body {
 }
 
 .catalog-item-link-see-more:active {
-  bakground-color: #756157;
+  background-color: #756157;
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -1011,25 +1053,24 @@ body {
   width: 140px;
   height: 37px;
   background-image: url('../img/vector/catalog-star-review-point.svg');
-  background-repeat-x: space;
-  background-repeat-y: no-repeat;
-  background-position-y: center;
+  background-repeat: space no-repeat;
+  background-position: left center;
 }
 
 .catalog-list-item:first-child .catalog-item-rating-stars {
-  width: 73px;
+  width: 89px;
 }
 
 .catalog-list-item:nth-child(2) .catalog-item-rating-stars {
-  width: 73px;
+  width: 89px;
 }
 
 .catalog-list-item:nth-child(3) .catalog-item-rating-stars {
-  width: 55px;
+  width: 65px;
 }
 
 .catalog-list-item:last-child .catalog-item-rating-stars {
-  width: 37px;
+  width: 43px;
 }
 
 .catalog-item-rating-text {
@@ -1092,7 +1133,6 @@ body {
 }
 
 /* Стили для секции подписки на рассылку */
-/* !!!Скорректировать фильтр!!! */
 
 .subscription {
   padding-top: 96px;
@@ -1139,9 +1179,9 @@ body {
   border-bottom-left-radius: 4px;
   border-top-left-radius: 4px;
   font-family: "PT Sans", sans-serif;
-  font-size: 18px;
   font-weight: 400;
   color: #000;
+  border:
 }
 
 .subscription__button {
@@ -1323,6 +1363,19 @@ body {
   background-position: center center;
   background-color: #F2F2F2;
   cursor: pointer;
+  outline: none;
+}
+
+.modal-close-button:hover {
+  background-color: #E6E6E6;
+}
+
+.modal-close-button:focus {
+  border: 3px solid #83B3D3;
+}
+
+.modal-close-button:active {
+  opacity: 0.6;
 }
 
 .modal-form {
@@ -1338,7 +1391,7 @@ body {
 }
 
 .field-sign {
-  font-weight:  700;
+  font-weight: 700;
   font-size: 20px;
   line-height: 24px;
 }
