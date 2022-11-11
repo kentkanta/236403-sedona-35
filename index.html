@@ -219,38 +219,40 @@
         <form action="#" method="get" class="modal-form">
           <div class="modal-dates-group">
             <label class="field-sign field-date-sign entry-field-sign" for="entry-date">Дата заезда:</label>
-            <input class="field-date field-date-entry" id="entry-date" name="entry-date" type="text" value="27 апреля 2020">
+            <input class="field-date field-date-entry" id="entry-date" name="entry-date" type="text" placeholder="Укажите дату">
+            <p class="field-signature field-signature__alert">Мы не можем отправить вас в прошлое.</p>
           </div>
           <div class="modal-dates-group">
             <label class="field-sign field-date-sign departure-field-sign" for="departure-date">Дата выезда:</label>
-            <input class="field-date field-date-departure" id="departure-date" name="departure-date" type="text" value="1 сентября 2023">
+            <input class="field-date field-date-departure" id="departure-date" name="departure-date" type="text" placeholder="Укажите дату">
+            <p class="field-signature field-signature__available">На эти даты есть свободные номера. Пока есть.</p>
           </div>
           <div class="persons-quantity">
             <div class="persons-quantity-adults">
-              <button class="less-button persons-quantity-adults__less-button" type="button">
-                <span class="visually-hidden">Меньше</span>
-                <span class="change-quantity">-</span>
-              </button>
-              <button class="more-button persons-quantity-adults__more-button" type="button">
-                <span class="visually-hidden">Больше></span>
-                <span class="change-quantity">+</span>
-              </button>
               <label class="field-sign persons-quantity-adults__field-sign" for="adults-field">Взрослые:</label>
-              <input class="persons-field persons-quantity-adults__persons-field" type="text" name="adults-field"
-                id="adults-field" value="2">
+              <button class="less-button persons-quantity-adults__less-button" type="button">
+                <span class="change-quantity"><span class="visually-hidden">Меньше</span>-</span>
+              </button>
+              <input class="persons-field persons-quantity-adults__persons-field" type="number" name="adults-field"
+              id="adults-field" value="2">
+              <button class="more-button persons-quantity-adults__more-button" type="button">
+                <span class="change-quantity"><span class="visually-hidden">Больше</span>+</span>
+              </button>
             </div>
             <div class="persons-quantity-young">
-              <button class="less-button persons-quantity-young__less-button" type="button">
-                <span class="visually-hidden">Меньше</span>
-                <span class="change-quantity">-</span>
-              </button>
-              <button class="more-button persons-quantity-young__more-button" type="button">
-                <span class="visually-hidden">Больше</span>
-                <span class="change-quantity">+</span>
-              </button>
               <label class="field-sign persons-quantity-young__field-sign" for="young-field">Дети:</label>
-              <input class="persons-field persons-quantity-young__persons-field" type="text" name="young-field"
+              <span class="tooltip">
+                <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет
+                  размещаются бесплатно.</span>
+              </span>
+              <button class="less-button persons-quantity-young__less-button" type="button">
+                <span class="change-quantity"><span class="visually-hidden">Меньше</span>-</span>
+              </button>
+              <input class="persons-field persons-quantity-young__persons-field" type="number" name="young-field"
                 id="young-field" value="2">
+              <button class="more-button persons-quantity-young__more-button" type="button">
+                <span class="change-quantity"><span class="visually-hidden">Больше</span>+</span>
+              </button>
             </div>
           </div>
           <button class="button modal__button" type="submit">Найти</button>

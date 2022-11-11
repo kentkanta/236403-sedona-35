@@ -76,7 +76,7 @@
 
           <section class="hotel-filter">
             <h2 class="visually-hidden">Фильтры для поиска гостиницы</h2>
-            <form class="hotel-filter-form" action="" method="get">
+            <form class="hotel-filter-form" action="https://echo.htmlacademy.ru/" method="get">
               <fieldset class="hotel-filter-group hotel-filter__hotel-filter-group infrastructure-filter-group">
                 <legend class="hotel-filter-title hotel-filter__hotel-filter-title">Инфраструктура:</legend>
                 <div class="infrastructure-filter hotel-filter__infrastructure-filter">
@@ -131,20 +131,20 @@
                 <div class="range hotel-filter__range">
 
                   <div class="range-wrapper-inputs hotel-filter__range-wrapper-inputs">
-                    <input type="text" class="range-input hotel-filter__range-input input-from" placeholder="0"
+                    <input type="number" class="range-input hotel-filter__range-input input-from" placeholder="0"
                       name="min-price">
                     <label class="range-label hotel-filter__range-label label-from">от</label>
-                    <input type="text" class="range-input hotel-filter__range-input input-to" placeholder="9000"
+                    <input type="number" class="range-input hotel-filter__range-input input-to" placeholder="9000"
                       name="max-price">
                     <label class="range-label hotel-filter__range-label label-to">до</label>
                   </div>
 
                   <div class="range-scale hotel-filter__range-scale">
                     <div class="range-bar hotel-filter__range-bar">
-                      <button class="range-toggle toggle-from">
+                      <button class="range-toggle toggle-from" type="button">
                         <span class="visually-hidden">Изменить минимальную цену</span>
                       </button>
-                      <button class="range-toggle toggle-to">
+                      <button class="range-toggle toggle-to" type="button">
                         <span class="visually-hidden">Изменить максимальную цену</span>
                       </button>
                     </div>
@@ -154,7 +154,7 @@
 
               </fieldset>
               <div class="form-buttons hotel-filter__form-buttons">
-                <button class="hotel-filter__submit-button button" type="button">Применить</button>
+                <button class="hotel-filter__submit-button button" type="submit">Применить</button>
                 <button class="hotel-filter__reset-button button" type="reset">Сбросить</button>
               </div>
             </form>
