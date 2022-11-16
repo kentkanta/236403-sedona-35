@@ -3,15 +3,15 @@ const closePopupButton = document.querySelector(".modal-close-button");
 const popup = document.querySelector(".modal-container");
 
 openPopupButton.addEventListener("click", function () {
-  popup.classList.remove("visually-hidden");
+  popup.classList.remove("modal-closed");
 });
 
 closePopupButton.addEventListener("click", function () {
-  popup.classList.add("visually-hidden");
+  popup.classList.add("modal-closed");
 })
 
 document.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
-    popup.classList.add("visually-hidden");
+    popup.classList.add("modal-closed");
   }
 });
