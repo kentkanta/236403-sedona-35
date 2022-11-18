@@ -13,7 +13,7 @@
     <header class="main-header">
       <nav class="main-nav main-header__main-nav">
         <a href="index.html" class="site-logo main-header__site-logo">
-          <img src="img/vector/sedona-logo.svg" width="140" height="70" alt="Логотип сайта Sedona" />
+          <img src="img/vector/sedona-logo.svg" width="140" height="70" alt="Логотип сайта Sedona." />
         </a>
         <ul class="site-navigation main-header__site-navigation">
           <li class="site-navigation-item main-header__site-navigation-item">
@@ -79,7 +79,7 @@
             <fieldset class="hotel-filter-group hotel-filter__hotel-filter-group infrastructure-filter-group">
               <legend class="hotel-filter-title hotel-filter__hotel-filter-title">Инфраструктура:</legend>
               <div class="infrastructure-filter hotel-filter__infrastructure-filter">
-                <label class="infrastructure-name hotel-filter__infrastracture-name">
+                <label class="infrastructure-name hotel-filter__infrastracture-name" for="swimming-pool">
                   <input class="control-input visually-hidden" type="checkbox" name="infrastructure"
                     value="swimming-pool" id="swimming-pool" checked />
                   <span class="control-mark infrastructure-filter-group__control-mark"></span>
@@ -87,14 +87,14 @@
                 </label>
               </div>
               <div class="infrastructure-filter hotel-filter__infrastructure-filter">
-                <label class="infrastructure-name hotel-filter__infrastracture-name">
+                <label class="infrastructure-name hotel-filter__infrastracture-name" for="parking">
                   <input class="control-input visually-hidden" type="checkbox" name="infrastructure" value="parking" id="parking" checked />
                   <span class="control-mark infrastructure-filter-group__control-mark"></span>
                   <span class="control-title">Парковка</span>
                 </label>
               </div>
               <div class="infrastructure-filter hotel-filter__infrastructure-filter">
-                <label class="infrastructure-name hotel-filter__infrastracture-name">
+                <label class="infrastructure-name hotel-filter__infrastracture-name" for="wi-fi">
                   <input class="control-input visually-hidden" type="checkbox" name="infrastructure" value="wi-fi"
                     id="wi-fi" />
                   <span class="control-mark infrastructure-filter-group__control-mark"></span>
@@ -105,21 +105,21 @@
             <fieldset class="hotel-filter-group hotel-filter__hotel-filter-group type-of-housing-filter-group">
               <legend class="hotel-filter-title hotel-filter__hotel-filter-title">Тип жилья:</legend>
               <div class="type-of-housing-filter hotel-filter__type-of-housing-filter">
-                <label class="type-of-housing-name hotel-filter__type-of-housing-name">
+                <label class="type-of-housing-name hotel-filter__type-of-housing-name" for="hotel">
                   <input class="control-input visually-hidden" type="radio" name="type-of-housing" value="hotel" id="hotel" checked />
                   <span class="control-mark type-of-housing-filter-group__control-mark"></span>
                   <span class="control-title">Гостиница</span>
                 </label>
               </div>
               <div class="type-of-housing-filter hotel-filter__type-of-housing-filter">
-                <label class="type-of-housing-name hotel-filter__type-of-housing-name">
+                <label class="type-of-housing-name hotel-filter__type-of-housing-name" for="motel">
                   <input class="control-input visually-hidden" type="radio" name="type-of-housing" value="motel" id="motel" />
                   <span class="control-mark type-of-housing-filter-group__control-mark"></span>
                   <span class="control-title">Мотель</span>
                 </label>
               </div>
               <div class="type-of-housing-filter hotel-filter__type-of-housing-filter">
-                <label class="type-of-housing-name hotel-filter__type-of-housing-name">
+                <label class="type-of-housing-name hotel-filter__type-of-housing-name" for="apartments">
                   <input class="control-input visually-hidden" type="radio" name="type-of-housing" value="apartments" id="apartments" />
                   <span class="control-mark type-of-housing-filter-group__control-mark"></span>
                   <span class="control-title">Апартаменты</span>
@@ -131,11 +131,11 @@
               <div class="range hotel-filter__range">
                 <div class="range-wrapper-inputs hotel-filter__range-wrapper-inputs">
                   <input type="number" class="range-input hotel-filter__range-input input-from" placeholder="0"
-                    name="min-price">
-                  <label class="range-label hotel-filter__range-label label-from">от</label>
+                    name="min-price" id="label-from">
+                  <label class="range-label hotel-filter__range-label label-from" for="label-from">от</label>
                   <input type="number" class="range-input hotel-filter__range-input input-to" placeholder="9000"
-                    name="max-price">
-                  <label class="range-label hotel-filter__range-label label-to">до</label>
+                    name="max-price" id="label-to">
+                  <label class="range-label hotel-filter__range-label label-to" for="label-to">до</label>
                 </div>
                 <div class="range-scale hotel-filter__range-scale">
                   <div class="range-bar hotel-filter__range-bar">
@@ -193,7 +193,7 @@
                 <a href="#" class="catalog-list-see-hotel-link catalog__catalog-list-see-hotel-link">
                   <h3 class="catalog-list-title catalog__catalog-list-title">Amara Resort &amp; Spa</h3>
                   <img class="catalog-list-img catalog__catalog-list-img" src="img/bitmap/catalog-amara-resort-and-spa.jpg" width="300" height="212"
-                    alt="Пещера, из которой открывается вид на звёздное небо" />
+                    alt="Пещера, из которой открывается вид на звёздное небо." />
                 </a>
                 <div class="catalog-item-price">
                   <dl class="price-list catalog__price-list">
@@ -214,7 +214,7 @@
                 <a href="#" class="catalog-list-see-hotel-link catalog__catalog-list-see-hotel-link">
                   <h3 class="catalog-list-title catalog__catalog-list-title">Villas at Poco Diablo</h3>
                   <img class="catalog-list-img catalog__catalog-list-img" src="img/bitmap/catalog-villas-at-poco-diablo.jpg" width="300" height="212"
-                    alt="Хмурое небо, радуга на фоне скалистых гор. Лес, окружившие горы " />
+                    alt="Хмурое небо, радуга на фоне скалистых гор. Лес, окружившие горы." />
                 </a>
                 <div class="catalog-item-price">
                   <dl class="price-list catalog__price-list">
@@ -235,7 +235,7 @@
                 <a href="#" class="catalog-list-see-hotel-link catalog__catalog-list-see-hotel-link">
                   <h3 class="catalog-list-title catalog__catalog-list-title">Desert Quail Inn</h3>
                   <img class="catalog-list-img catalog__catalog-list-img" src="img/bitmap/catalog-desert-quail-inn.jpg" width="300" height="212"
-                    alt="Пустынные горы с редкой растительностью, окружёныне редкими деревьицами" />
+                    alt="Пустынные горы с редкой растительностью, окружёныне редкими деревьицами." />
                 </a>
                 <div class="catalog-item-price">
                   <dl class="price-list catalog__price-list">
@@ -256,7 +256,7 @@
                 <a href="#" class="catalog-list-see-hotel-link catalog__catalog-list-see-hotel-link">
                   <h3 class="catalog-list-title catalog__catalog-list-title">GreenTree Inn</h3>
                   <img class="catalog-list-img catalog__catalog-list-img" src="img/bitmap/catalog-greentree-inn.jpg" width="300" height="212"
-                  alt="Скалистые горы на фоне яркого звёздного неба" />
+                  alt="Скалистые горы на фоне яркого звёздного неба." />
                 </a>
                 <div class="catalog-item-price">
                   <dl class="price-list catalog__price-list">
